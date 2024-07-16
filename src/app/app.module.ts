@@ -12,10 +12,33 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { MatDialogModule } from '@angular/material/dialog'
+import { MatDialogModule } from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { UserlistingComponent } from './userlisting/userlisting.component';
+import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
+    RegisterComponent,
+    LoginComponent,
+    HomeComponent,
+    UserlistingComponent,
+    UpdatepopupComponent,
+    // any other components
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     MatInputModule,
     MatSelectModule,
     MatCardModule,
@@ -24,13 +47,9 @@ import { MatDialogModule } from '@angular/material/dialog'
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatDialogModule
-
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
+    MatDialogModule,
+    ToastrModule.forRoot()
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
