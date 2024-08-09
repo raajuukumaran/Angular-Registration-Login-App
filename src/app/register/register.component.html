@@ -1,1 +1,49 @@
-<p>register works!</p>
+<mat-card>
+    <mat-card-header>
+      <h1>User Registration</h1>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="example-form" [formGroup]="registerForm" (ngSubmit)="proceedRegistration()">
+        
+        <!-- User Name -->
+        <mat-form-field class="example-full-width">
+          <mat-label>User Name</mat-label>
+          <input matInput formControlName="id">
+        </mat-form-field>
+  
+        <!-- Name -->
+        <mat-form-field class="example-full-width">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name" autocomplete="name">
+        </mat-form-field>
+  
+        <!-- Password -->
+        <mat-form-field class="example-full-width">
+          <mat-label>Password</mat-label>
+          <input type="password" matInput formControlName="password" autocomplete="new-password">
+        </mat-form-field>
+  
+        <!-- Email -->
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" autocomplete="email">
+        </mat-form-field>
+  
+        <!-- Gender Selection -->
+        <div>
+          <mat-radio-group formControlName="gender" aria-label="Gender">
+            <mat-radio-button value="male">Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+          </mat-radio-group>
+        </div>
+  
+        <!-- Submit and Back Buttons -->
+        <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+          <button mat-raised-button color="primary">Submit</button>
+          <a routerLink="/login" mat-raised-button color="accent">Back to Login</a>
+        </div>
+  
+      </form>
+    </mat-card-content>
+  </mat-card>
+  

@@ -1,1 +1,75 @@
-<p>home works!</p>
+<div style="text-align: center;">
+</div>
+
+<div class="container">
+    <h2>This Project Details</h2>
+
+    <div class="menu-grid">
+        <!-- Components menu -->
+        <div class="menu-item" (click)="toggleDetails('components')">
+            <strong>Components Used</strong>
+        </div>
+
+        <!-- Angular version menu -->
+        <div class="menu-item" (click)="toggleDetails('angularVersion')">
+            <strong>Angular Version</strong>
+        </div>
+
+        <!-- Angular Material version menu -->
+        <div class="menu-item" (click)="toggleDetails('angularMaterialVersion')">
+            <strong>Angular Material Version</strong>
+        </div>
+
+        <!-- Other Dependencies menu -->
+        <div class="menu-item" (click)="toggleDetails('otherDependencies')">
+            <strong>Other Dependencies</strong>
+        </div>
+
+        <!-- Dev Dependencies menu -->
+        <div class="menu-item" (click)="toggleDetails('devDependencies')">
+            <strong>Dev Dependencies</strong>
+        </div>
+    </div>
+
+    <!-- Details sections -->
+    <div class="details-grid">
+        <!-- Components details -->
+        <div class="details" *ngIf="showComponentsDetails">
+            <ul>
+                <li>Home: A colorful page with banner designs and a footer.</li>
+                <li>Register: Component for user registration.</li>
+                <li>Login: Component for user login.</li>
+                <li>User Popup: Component for updating user details.</li>
+                <li>User Listing: Component for displaying a list of users.</li>
+            </ul>
+        </div>
+
+        <!-- Angular version details -->
+        <div class="details" *ngIf="showAngularVersionDetails">
+            <p>Angular: 15.2.0</p>
+        </div>
+
+        <!-- Angular Material version details -->
+        <div class="details" *ngIf="showAngularMaterialVersionDetails">
+            <p>Angular Material: 15.1.0</p>
+        </div>
+        <div class="details" *ngIf="showDevDependenciesDetails">
+            <ul>
+                <li>Angular CLI: 15.2.10 - Command-line interface for Angular development.</li>
+                <li>TypeScript Definitions for Jasmine: 4.3.0 - TypeScript definitions for Jasmine testing framework.</li>
+            </ul>
+        </div>
+
+        <!-- Other Dependencies details -->
+        <div class="details" *ngIf="showOtherDependenciesDetails">
+            <ul>
+                <li>JSON Server: 1.0.0-beta.1 - Mock server for CRUD operations.</li>
+                <li>Ngx Toastr: 19.0.0 - Notification library for Angular.</li>
+                <li>RxJS: 7.8.0 - Reactive Extensions library for JavaScript.</li>
+            </ul>
+        </div>
+
+        <!-- Dev Dependencies details -->
+        
+    </div>
+</div>

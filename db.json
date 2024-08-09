@@ -1,18 +1,79 @@
 {
-    "posts": [
-      { "id": "1", "title": "a title", "views": 100 },
-      { "id": "2", "title": "another title", "views": 200 }
-    ],
-    "comments": [
-      { "id": "1", "text": "a comment about post 1", "postId": "1" },
-      { "id": "2", "text": "another comment about post 1", "postId": "1" }
-    ],
-    "profile": [{
-      "name": "typicode"
+  "role": [
+    {
+      "code": "user",
+      "name": "user",
+      "id": "8f4a"
+    },
+    {
+      "code": "client",
+      "name": "client",
+      "id": "15ec"
     }
-],
-   "user":[
-    
-   ]
-
-  }
+  ],
+  "user": [
+    {
+      "id": "Raajuu",
+      "name": "Rajesh kumar",
+      "email": "rraajuukumaran@gmail.com",
+      "password": "Rajesh@12",
+      "gender": "male",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "Swetha",
+      "name": "Swetha",
+      "email": "sr@gmail.com",
+      "password": "Swetha@12",
+      "gender": "female",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "id": "Vicky",
+      "name": "Vignesh",
+      "email": "v@gmail.com",
+      "password": "Vicky@12",
+      "gender": "male",
+      "role": "client",
+      "isActive": false
+    },
+    {
+      "id": "Kumar",
+      "name": "Kumar",
+      "email": "k@gmail.com",
+      "password": "Kumar@12",
+      "gender": "male",
+      "role": "client",
+      "isActive": false
+    },
+    {
+      "id": "saravanan",
+      "name": "sara",
+      "email": "s@gmail.com",
+      "password": "Saravanan@12",
+      "gender": "male",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "id": "vignesh",
+      "name": "Vignesh",
+      "email": "v@gmail.com",
+      "password": "Vignesh@12",
+      "gender": "male",
+      "role": "client",
+      "isActive": true
+    },
+    {
+      "id": "meenakshi",
+      "name": "Meenakshi",
+      "email": "r@gmail.com",
+      "password": "Meenakshi@12",
+      "gender": "female",
+      "role": "user",
+      "isActive": true
+    }
+  ]
+}
