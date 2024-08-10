@@ -29,7 +29,7 @@ export class UpdatepopupComponent implements OnInit {
     email: [''],
     gender: ['male'],
     role: ['', Validators.required],
-    isactive: [false],
+    isActive: [false],
   });
 
   ngOnInit(): void {
@@ -47,7 +47,7 @@ export class UpdatepopupComponent implements OnInit {
                 password: this.editdata?.password ?? '',
                 role: this.editdata?.role ?? '',
                 gender: this.editdata?.gender ?? 'male',
-                isactive: this.editdata?.isactive ?? false
+                isActive: this.editdata?.isActive ?? false
               });
             },
             error: err => {
@@ -77,7 +77,7 @@ export class UpdatepopupComponent implements OnInit {
         password: formValues.password || '',
         gender: formValues.gender || 'male',
         role: formValues.role || '',
-        isactive: formValues.isactive || false,
+        isActive: formValues.isActive || false,
       };
 
       console.log('Updating user with data:', userData); // Debugging step

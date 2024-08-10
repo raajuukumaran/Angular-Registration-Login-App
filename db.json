@@ -37,7 +37,7 @@
       "password": "Vicky@12",
       "gender": "male",
       "role": "client",
-      "isActive": false
+      "isActive": true
     },
     {
       "id": "Kumar",
@@ -45,7 +45,7 @@
       "email": "k@gmail.com",
       "password": "Kumar@12",
       "gender": "male",
-      "role": "client",
+      "role": "user",
       "isActive": false
     },
     {
@@ -55,7 +55,7 @@
       "password": "Saravanan@12",
       "gender": "male",
       "role": "user",
-      "isActive": true
+      "isActive": false
     },
     {
       "id": "vignesh",
@@ -64,7 +64,7 @@
       "password": "Vignesh@12",
       "gender": "male",
       "role": "client",
-      "isActive": true
+      "isActive": false
     },
     {
       "id": "meenakshi",
@@ -73,6 +73,51 @@
       "password": "Meenakshi@12",
       "gender": "female",
       "role": "user",
+      "isActive": false
+    },
+    {
+      "id": "Kumaran",
+      "name": "Kumar",
+      "email": "k@gmail.com",
+      "password": "Kumar@12",
+      "gender": "male",
+      "role": "user",
+      "isActive": false
+    },
+    {
+      "id": "gcvgufu",
+      "name": "tut",
+      "email": "tut@gmailcom",
+      "password": "tUTORIAL@12",
+      "gender": "male",
+      "role": "user",
+      "isActive": false
+    },
+    {
+      "id": "Chitra",
+      "name": "Chitra",
+      "email": "c@gmail.com",
+      "password": "Chitra@12",
+      "gender": "male",
+      "role": "user",
+      "isActive": false
+    },
+    {
+      "id": "raajuukumar",
+      "name": "raj",
+      "email": "rraajuukumaran@gmail.com",
+      "password": "Rajesh@12",
+      "gender": "male",
+      "role": "user",
+      "isActive": false
+    },
+    {
+      "id": "Pandi",
+      "name": "Raja Pandi",
+      "password": "Pandi@12",
+      "email": "rajapandi5677@gmail.com",
+      "gender": "male",
+      "role": "",
       "isActive": true
     }
   ]
